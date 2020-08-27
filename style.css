@@ -1,0 +1,40 @@
+*{
+    margin:0 auto;
+}
+body{
+    font-family: "Open sans", Georgia, serif;
+    font-size:14px;
+}
+h1{
+    display:none;
+}
+h2{
+    font-weight: bold;
+}
+header{
+    display: flex;
+    justify-content: center;
+    padding:20px 0;
+    box-shadow: 0px 0px 10px 0px #666;
+    margin:0 auto;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+.row-0{
+    background-color:#eaeaea;
+    padding:10px 0;
+}
+.row-1{
+    background-color:#f6f6f6;
+    flex-direction: column;
+    padding:30px 0;
+}
+.row-2{
+    flex-direction:column;
+    padding: 15px 15px;
+}
+.row-2 h2{
+    display: contents;
+}
