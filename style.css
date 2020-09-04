@@ -13,6 +13,9 @@ h2{
     font-weight: bold;
     padding:10px 0;
 }
+h3{
+    padding:0 20px;
+}
 p{
     padding:10px 20px;
 }
@@ -30,6 +33,13 @@ button{
     background: linear-gradient(#FF79DA, #9356DC);
     border:none;
     color:#fff;
+}
+.fas{
+    font-size:30px;
+}
+img{
+    width: 100%;
+    height: 56.25vw;
 }
 header{
     display: flex;
@@ -59,4 +69,30 @@ section{
 }
 .row-2 h2{
     display: contents;
+}
+.row-3{
+    flex-direction: column;
+    background-color:#f6f6f6;
+}
+.row-3 h2{
+    margin:0;
+    padding: 40px 0 20px 0;
+}
+.resto{
+    border-radius:15px;
+    background-color: #fff;
+    margin-bottom:5%;
+}
+.resto img{
+    border-radius: 15px 15px 0 0;
+}
+.new{
+    position: relative;
+    float: right;
+    top: 50px;
+    right: 30px;
+    background-color:#99e2d0;
+    color:#139274;
+    padding:10px 30px;
+    border-radius: 5px;
 }
