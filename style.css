@@ -95,4 +95,20 @@ section{
     color:#139274;
     padding:10px 30px;
     border-radius: 5px;
+    font-weight: bold;
+}
+footer{
+    background-color: #353535;
+}
+.logo-footer{
+    width:50%;
+    margin: 0;
+}
+.footer-info{
+    display: flex;
+    flex-direction: column;
+}
+.footer-info a{
+    color:#fff;
+    text-decoration: none;
 }
