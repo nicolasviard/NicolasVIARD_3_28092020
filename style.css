@@ -21,11 +21,14 @@ p{
 }
 button{
     margin:10px 0;
+    font-weight: bold;
+    font-size:18px;
 }
 .btn{
     padding:20px 20px;
     border-radius: 20px;
     border:none;
+    text-align:left;
 }
 .btn-1{
     padding:10px 20px;
@@ -35,7 +38,12 @@ button{
     color:#fff;
 }
 .fas{
-    font-size:30px;
+    font-size:25px;
+    width:10%;
+    margin-right:30px;
+}
+.far{
+    float:right;
 }
 img{
     width: 100%;
