@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/485cb39ee3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <title>Oh My Food</title>
 </head>
 
@@ -31,46 +31,47 @@
         </section>
         <section class="row-3">
             <h2>Restaurants</h2>
-            <div class="resto resto-1">
-                <div class="new">New</div>
-                <img src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"/>
-                <h3>The Full Palette</h3>
-                <p>New York</p>
-                <i class="far fa-heart"></i>
-            </div>
-            <div class="resto resto-2">
+            <article class="resto resto-1">
+                <figure>
+                    <img src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"/>
+                    <figcaption>New</figcaption>
+                </figure>
+                <aside> 
+                    <h3>The Full Palette</h3>
+                    <p>New York</p> 
+                    <i class="far fa-heart"></i>
+                </aside>
+            </article>
+            <article class="resto resto-2">
                 <div class="new">New</div>
                 <img src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"/>
                 <h3>The Enchanted Plate</h3>
                 <p>New York</p>
                 <i class="far fa-heart"></i>
-            </div>
-            <div class="resto resto-3">
+            </article>
+            <article class="resto resto-3">
                 <div class="new">New</div>
                 <img src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"/>
                 <h3>Bastille</h3>
                 <p>New York</p>
                 <i class="far fa-heart"></i>
-            </div>
-            <div class="resto resto-4">
+            </article>
+            <article class="resto resto-4">
                 <div class="new">New</div>
                 <img src="img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"/>
                 <h3>Le gourmand</h3>
                 <p>New York</p>
                 <i class="far fa-heart"></i>
-            </div>
+            </article>
         </section>
     </main>
     <footer>
-        <div class="logo-footer">
-            <img src="img/logo/ohmyfood@2x.svg"/>
-        </div>
-        <div class="footer-info">
-            <a href="#">Suggest a restaurant</a>
-            <a href="#">Become a partner</a>
-            <a href="#">Legal</a>
-            <a href="#">Contact</a>
-        </div>
+        <ul class="footer-info">
+            <li><a href="#">Suggest a restaurant</a></li>
+            <li><a href="#">Become a partner</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </footer>
 </body>
 

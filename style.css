@@ -94,10 +94,10 @@ section{
 .resto img{
     border-radius: 15px 15px 0 0;
 }
-.new{
+figcaption{
     position: relative;
     float: right;
-    top: 50px;
+    top: -185px;
     right: 30px;
     background-color:#99e2d0;
     color:#139274;
@@ -105,18 +105,25 @@ section{
     border-radius: 5px;
     font-weight: bold;
 }
+aside{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
 footer{
     background-color: #353535;
+    padding-top: 3rem;
+    background-image: url(img/logo/ohmyfood@2x.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
 }
 .logo-footer{
     width:50%;
     margin: 0;
 }
-.footer-info{
-    display: flex;
-    flex-direction: column;
-}
 .footer-info a{
     color:#fff;
     text-decoration: none;
+}
+ul{
+    list-style-type: none;
 }
