@@ -13,6 +13,10 @@ h2{
     font-weight: bold;
     padding:10px 0;
 }
+img{
+    width:100%;
+    height:100%;
+}
 h3{
     padding:0 20px;
 }
@@ -45,10 +49,6 @@ button{
 .far{
     float:right;
 }
-img{
-    width: 100%;
-    height: 56.25vw;
-}
 header{
     display: flex;
     justify-content: center;
@@ -64,6 +64,24 @@ section{
 .row-0{
     background-color:#eaeaea;
     padding:10px 0;
+    font-weight:bold;
+    color:#353535;
+    font-size:18px;
+}
+.row-0 i{
+    margin:0;
+    padding:0;
+}
+.row-0 p{
+    margin:0;
+    padding:0 15px;
+}
+.location{
+    display: flex;
+    margin: 0;
+}
+.fa-map-marker-alt{
+    font-size: 15px;
 }
 .row-1{
     background-color:#f6f6f6;
@@ -107,7 +125,27 @@ figcaption{
 }
 aside{
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 100% 30%;
+    padding-top: 10px;
+}
+aside p{
+    grid-column-start: 1;
+    padding-top:0;
+}
+
+aside h3, aside p{
+    margin:0;
+    justify-self: left;
+    padding-left:10px;
+}
+.fa-heart{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    font-size:25px;
+}
+.fa-heart:hover{
+    color: linear-gradient(#FF79DA, #9356DC);
+    background-color: linear-gradient(#FF79DA, #9356DC);
 }
 footer{
     background-color: #353535;
