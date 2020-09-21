@@ -16,7 +16,11 @@ h2{
     margin: 0 0 20px 0;
 }
 h2::after{
-    border-bottom: 1px solid #99e2d0;
+    display: flex;
+    content: "";
+    background: #99e2d0;
+    height:2px;
+    width:15%;
 }
 header{
     display: flex;
@@ -56,8 +60,8 @@ button{
     font-size:18px;
 }
 .btn-1{
-    padding:10px 20px;
-    border-radius: 20px;
+    padding:15px 62px;
+    border-radius: 25px;
     background: linear-gradient(#FF79DA, #9356DC);
     border:none;
     color:#fff;
@@ -70,12 +74,31 @@ aside{
     text-align: left;
     margin-bottom: 20px;
     box-shadow: 1px 1px 20px -10px;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
+    &:hover{
+        & > .progress_bar{
+            animation: progress-bar 1000ms;
+        }
+    }
+}
+@keyframes progress-bar {
+    0%   {transform: scaleX(0);}
+    17%  {transform: scaleX(.18);}
+    24%  {transform: scaleX(.4);}
+    50%  {transform: scaleX(.81);}
+    100% {transform: scaleX(1);}
 }
 .tarif{
     float:right;
     margin-top: -15px;
 }
-
+.row-3{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 60px 0;
+}
 
 footer{
     background-color: #353535;
