@@ -74,21 +74,6 @@ aside{
     text-align: left;
     margin-bottom: 20px;
     box-shadow: 1px 1px 20px -10px;
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 400ms;
-    &:hover{
-        & > .progress_bar{
-            animation: progress-bar 1000ms;
-        }
-    }
-}
-@keyframes progress-bar {
-    0%   {transform: scaleX(0);}
-    17%  {transform: scaleX(.18);}
-    24%  {transform: scaleX(.4);}
-    50%  {transform: scaleX(.81);}
-    100% {transform: scaleX(1);}
 }
 .tarif{
     float:right;
