@@ -192,8 +192,10 @@ aside a{
     font-size:25px;
 }
 .fa-heart:hover{
-    background-color: linear-gradient(#FF79DA, #9356DC);
     font-weight: 900;
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 /*aside a:hover{
     color: linear-gradient(#FF79DA, #9356DC);
