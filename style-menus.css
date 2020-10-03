@@ -75,29 +75,12 @@ aside{
     color: #fff;
 }
 
-.rotation-animation {
-    animation: div-rotate 0.7s infinite steps(8);
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-    transform-origin: 50% 51%;
-    -webkit-transform-origin: 50% 51%;
-}
-
-@keyframes div-rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 aside.progress_bar-test > div:first-of-type{
-    width:75%;
+    width:88%;
     padding: 20px 20px;
 }
 aside.progress_bar-test > div:nth-of-type(2){
-    width:25%;
+    width:12%;
     padding: 20px 20px;
     display: flex;
     flex-direction: column-reverse;
@@ -113,12 +96,19 @@ aside.progress_bar-test:hover > div:first-of-type{
     width:50%;
 }
 aside.progress_bar-test:hover > div:nth-of-type(2){
-    width:25%;
+    width:12%;
 }
 aside.progress_bar-test:hover > div:last-of-type{
     width:25%;
     background-color: #99e2d0;
     border-radius: 0 20px 20px 0;
+}
+aside.progress_bar-test:hover > div:last-of-type i{
+    transform: rotate(0deg);
+}
+aside.progress_bar-test > div:last-of-type i{
+    transform: rotate(180deg);
+    transition: transform 1s;
 }
 aside.progress_bar-test {
     display: flex;
@@ -129,6 +119,37 @@ aside.progress_bar-test > div{
 aside.progress_bar-test > * {
     overflow: hidden;
 }
+
+aside:first-of-type{
+    animation: fadein 2s;
+}
+.animationMargin{
+    animation: marginTop 4s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes marginTop {
+    from {
+        margin-top: 20px;
+    }
+    to {
+        margin-top: 0;
+    }
+}
+
+aside:nth-of-type(2){
+    animation: fadein 2s;
+}
+aside:last-of-type{
+    animation: fadein 2s;
+}
+
 .row-3{
     display: flex;
     justify-content: center;
