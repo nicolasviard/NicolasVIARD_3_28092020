@@ -265,3 +265,42 @@ ul{
         width: 3%;
     }
   }
+
+  @media (min-width: 1025px) {
+    img{
+        height: 29.25vw;
+    }
+    .btn-1{
+        width: 20%;
+    }
+    .row-2 {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding: 0 22%;
+    }
+    .row-2 h2{
+        width:100%;
+        text-align: center;
+        display: initial;
+    }
+    .row-3{
+        display: grid;
+        grid-template-columns:25% 25% 25% 25%;
+        grid-template-areas: "title title title title";
+        column-gap: 10px;
+        margin: 0 10px;
+        padding: 15px 30px;
+    }
+    .row-3 h2{
+        grid-area: title;
+    }
+    figcaption{
+        top: -535px;
+    }
+    footer{
+        background-size: 10%;
+    }
+    .footer-info .fas {
+        width: 1%;
+    }
+  }
