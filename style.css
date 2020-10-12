@@ -161,7 +161,7 @@ section{
 figcaption{
     position: relative;
     float: right;
-    top: -185px;
+    margin-top: -185px;
     right: 30px;
     background-color:#99e2d0;
     color:#139274;
@@ -259,9 +259,7 @@ ul{
         grid-area: title;
     }
     figcaption{
-        top: -325px;
-    }
-    .footer-info .fas {
+        margin-top: -325px;
         width: 3%;
     }
   }
@@ -295,12 +293,12 @@ ul{
         grid-area: title;
     }
     figcaption{
-        top: -535px;
+        margin-top: -380px;
     }
     footer{
         background-size: 10%;
     }
     .footer-info .fas {
-        width: 1%;
+        width: 2%;
     }
   }
