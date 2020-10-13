@@ -227,6 +227,10 @@ ul{
     .titre{
         padding-top: 6%;
     }
+    aside{
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 @media (min-width: 1025px) {
@@ -248,6 +252,10 @@ ul{
     }
     .titre{
         padding-top: 6%;
+    }
+    aside{
+        margin-left: 0;
+        margin-right: 0;
     }
     footer{
         background-size: 10%;
