@@ -59,7 +59,7 @@ img{
 }
 .row-2{
     background-color: #f6f6f6;
-    padding:0 20px;
+    padding: 0 20px 1rem 20px;
     border-radius: 40px 40px 0 0;
     position: relative;
     margin-top: -35px;
@@ -82,7 +82,9 @@ aside{
     border: none;
     text-align: left;
     margin-bottom: 20px;
+    margin-top: 20px;
     box-shadow: 1px 1px 20px -10px;
+    animation: fadein 1s;
 }
 .fa-check-circle{
     color: #fff;
@@ -142,12 +144,7 @@ aside.progress_bar-test > div{
 aside.progress_bar-test > * {
     overflow: hidden;
 }
-aside:first-of-type{
-    animation: fadein 2s;
-}
-.animationMargin{
-    animation: marginTop 4s;
-}
+
 aside.progress_bar-test> div:first-of-type > * {
     overflow: hidden;
     height: 1.2rem;
@@ -157,27 +154,14 @@ aside.progress_bar-test:hover > div:first-of-type > * {
       width: 100%;
   }
 @keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-@keyframes marginTop {
-    from {
-        margin-top: 20px;
-    }
-    to {
-        margin-top: 0;
-    }
-}
-
-aside:nth-of-type(2){
-    animation: fadein 2s;
-}
-aside:last-of-type{
-    animation: fadein 2s;
+  0%      { 
+    margin-top: 40px;
+    opacity: 0;
+  }
+  100%    {
+     margin-top: 20px;
+     opacity: 1;
+  }
 }
 
 .row-3{
