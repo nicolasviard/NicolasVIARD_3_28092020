@@ -174,19 +174,19 @@ aside{
     grid-template-columns: 70% 30%;
     padding-top: 10px;
 }
-aside p{
+aside .ville, aside .nomResto{
     grid-column-start: 1;
     padding-top:0;
-}
-
-aside h3, aside p{
     margin:0;
     justify-self: left;
     padding-left:10px;
+    text-decoration: none;
+    color:#000;
 }
-aside a{
-    grid-column-start: 2;
+
+.coeur{
     grid-row-start: 1;
+    grid-column-start: 2;
 }
 .fa-heart{
     font-size:25px;
