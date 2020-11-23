@@ -24,11 +24,9 @@ h3{
 p{
     padding:10px 20px;
 }
-button{
+.btn{
     font-weight: bold;
     font-size:18px;
-}
-.btn{
     padding:20px 20px;
     border-radius: 20px;
     border:none;
@@ -65,15 +63,22 @@ button{
     background: linear-gradient(#FF79DA, #9356DC);
     border:none;
     color:#fff;
+    box-shadow: 0px 0px 10px -3px #666;
+    text-align: center;
 }
-.btn-2, .btn-3, .btn-4{
-    margin: 20px 10px;
-    width: 100%;
+.btn-1 a{
+    color: #fff;
+    text-decoration: none;
+}
+.btn-1:hover{
+    box-shadow: 0px 0px 10px -3px #000;
+    background: linear-gradient(#ff79d9d5, #9256dc7e);
 }
 .fas{
     font-size:25px;
     width:10%;
     padding: 0 15px;
+    color: #7e7e7e;
 }
 .far{
     float:right;
@@ -134,10 +139,14 @@ section{
     display: contents;
 }
 .row-2 a{
-    margin: 0;
+    margin: 15px;
+    text-decoration: none;
+    background-color: #f6f6f6;
+    box-shadow: 0px 0px 10px -3px #666;
 }
-.row-2 a button:hover{
-   background-color: #f5edff;
+.row-2 a:hover{
+    background-color: #f5edff;
+    box-shadow: 0px 0px 10px -3px #5d5c5c;
 }
 .fa-mobile-alt:hover, .fa-list-ul:hover, .fa-store:hover{
     color: #9356DC;
@@ -234,12 +243,14 @@ ul{
     img{
         height: 45.25vw;
     }
+    .btn{
+        width:40%;
+    }
     .btn-1{
         width: 40%;
     }
     .row-2 {
         flex-flow: row wrap;
-        justify-content: space-between;
         padding: 0 70px;
     }
     .row-2 h2{
@@ -260,7 +271,7 @@ ul{
     }
     figcaption{
         margin-top: -325px;
-        width: 3%;
+        width: 15%;
     }
   }
 
@@ -268,12 +279,14 @@ ul{
     img{
         height: 29.25vw;
     }
+    .btn{
+        width:35%;
+    }
     .btn-1{
         width: 20%;
     }
     .row-2 {
         flex-flow: row wrap;
-        justify-content: space-between;
         padding: 0 22%;
     }
     .row-2 h2{
@@ -300,5 +313,76 @@ ul{
     }
     .footer-info .fas {
         width: 2%;
+    }
+  }
+.loader-container {
+    width           : 100vw;
+    height          : 0;
+    position        : fixed;
+    background-color: white;
+    animation       : accueil 3s;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    overflow        : hidden;
+  }
+  
+.loader {
+    animation         : spin 1s infinite linear;
+    border            : solid 2vmin transparent;
+    border-radius     : 50%;
+    border-right-color: #09f;
+    border-top-color  : #09f;
+    box-sizing        : border-box;
+    height            : 20vmin;
+    width             : 20vmin;
+  }
+.loader:before {
+    animation         : spin 2s infinite linear;
+    border            : solid 2vmin transparent;
+    border-radius     : 50%;
+    border-right-color: #3cf;
+    border-top-color  : #3cf;
+    box-sizing        : border-box;
+    content           : "";
+    height            : 16vmin;
+    left              : 0;
+    position          : absolute;
+    top               : 0;
+    width             : 16vmin;
+  }
+.loader:after {
+    animation         : spin 3s infinite linear;
+    border            : solid 2vmin transparent;
+    border-radius     : 50%;
+    border-right-color: #6ff;
+    border-top-color  : #6ff;
+    box-sizing        : border-box;
+    content           : "";
+    height            : 12vmin;
+    left              : 2vmin;
+    position          : absolute;
+    top               : 2vmin;
+    width             : 12vmin;
+  }
+  
+@keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes accueil {
+    0% {
+      width : 100vw;
+      height: 100vh;
+    }
+    99% {
+      width : 100vw;
+      height: 100vh;
+    }
+    100% {
+      width : 0;
+      height: 0;
     }
   }
