@@ -178,12 +178,15 @@ figcaption{
     border-radius: 5px;
     font-weight: bold;
 }
-aside{
+article a{
+    text-decoration: none;
+}
+.aside{
     display: grid;
     grid-template-columns: 70% 30%;
     padding-top: 10px;
 }
-aside .ville, aside .nomResto{
+.aside .ville, .aside .nomResto{
     grid-column-start: 1;
     padding-top:0;
     margin:0;
