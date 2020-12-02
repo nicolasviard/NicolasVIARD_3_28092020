@@ -168,7 +168,7 @@ section{
     border-radius: 15px 15px 0 0;
 }
 figcaption{
-    position: relative;
+    position: absolute;
     float: right;
     margin-top: -185px;
     right: 30px;
@@ -210,15 +210,10 @@ article a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 @keyframes fadeIn {
   from { opacity:0; }
   to   { opacity:1; }
 }
-/*aside a:hover{
-    color: linear-gradient(#FF79DA, #9356DC);
-    background-color: linear-gradient(#FF79DA, #9356DC);
-}*/
 footer{
     background-color: #353535;
     padding-top: 3rem;
